@@ -1,0 +1,163 @@
+body {
+    background-color: #4F2F0B;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    position: relative;
+    height: 60px;
+    font-size: 25px; 
+}
+.navbar, .web-footer, .navbar-brand, .navbar-brand img{
+    background-color: #331E07;
+    color: #D8AE7E;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Ensure the brand container has the full height of the navbar */
+    text-decoration: none; /* Remove underline from the link */
+    font-family: "Lobster", sans-serif;
+    font-size: 120%;
+}
+
+.navbar-logo {
+    max-height:120%; /* Ensure the logo fits within the navbar height */
+    width: auto; /* Maintain aspect ratio */
+}
+/* Navbar Menu */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin-left: 125px;
+}
+
+/* Navbar Items */
+.navbar-item {
+    margin-left: 20px;
+    font-family: "Baloo Da 2", sans-serif;
+    font-size:medium;
+    font-weight:100;
+}
+
+.navbar-link {
+    color: #D8AE7E;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navbar-link:hover {
+    background-color: #575757;
+}
+.product-table, .table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    vertical-align: middle;
+  }
+  
+  .table-row {
+    display: table-row;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .table-cell {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid #333;  /* Remove border */
+    background-color: transparent; /* Fully transparent background */
+    color: #FFF2D7; /* Text color */
+    vertical-align: middle; /* Center content vertically */
+    overflow-wrap: break-word;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Baloo Da 2", sans-serif;
+    transition: transform 0.3s ease-in-out, color 0.5s ease-in-out;
+  }
+  
+.column-wide{
+    width: 50%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+h3{
+    color: #FFF2D7; /* Text color */
+    vertical-align: middle; /* Center content vertically */
+    overflow-wrap: break-word;
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+    font-size: 400%;
+}
+.owner-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.owner-name{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.empty{
+    width: 30%;
+}
+  /* Header styling */
+  .product-table .table-row:first-child .table-cell {
+    font-weight: bolder;
+  }
+
+  .table-row:hover:not(:first-child){
+    background-color: #D8AE7E;
+    box-shadow: 10px 10px 10px 0px #331E07;
+    transform: scaleY(1.1);
+  }
+
+  .table-row:hover:not(:first-child) .table-cell {
+    color: #4F2F0B; /* Font color on hover */
+    font-weight:bold;
+    transform: scaleX(1.1);
+}
+
+  .product-image {
+    max-width: 300px; /* Adjust size as needed */
+    max-height: 300px; /* Adjust size as needed */
+    width: auto;
+    height: auto;
+    border-radius: 5px; /* Optional: rounded corners */
+  }  
+.web-footer{
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center align text */
+    position: relative; /* Ensure it's positioned correctly */
+    left: 0;
+    right: 0;
+}
+
+.about-us-details h2, .services-details h2, h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Baloo Da 2", sans-serif;
+}
+.about-us-details p, .services-details p{
+    font-family: "Baloo Da 2", sans-serif;
+    overflow-wrap: break-word;
+    padding: 50px;
+}
